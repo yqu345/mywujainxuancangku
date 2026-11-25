@@ -2,29 +2,58 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+*.lnk
 
 # 编辑器
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
 
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
 .venv/
 venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# 密钥与环境配置（不要提交）
 .env
+.env.*
+*.key
+*.pem
 
 # Node
 node_modules/
 npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # 构建产物
 dist/
 build/
+out/
+*.exe
+*.dll
 *.log
+
+# 压缩包与媒体（避免撑大仓库）
+*.zip
+*.7z
+*.rar
+*.mp4
+*.mp3
+*.iso
 
 # 临时文件
 *.tmp
 *.bak
+*.cache
 ~$*
